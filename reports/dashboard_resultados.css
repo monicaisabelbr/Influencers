@@ -1,0 +1,31 @@
+/* Los rankings se ajustan a la ventana mediante vertical_layout: fill.
+   Evaluacion tiene solo dos filas: conserva su altura natural sin recortarlas. */
+.evaluacion-amplia .dashboard-row {
+  flex: 0 0 auto !important;
+  height: auto !important;
+}
+
+.evaluacion-amplia .dashboard-column,
+.evaluacion-amplia .chart-wrapper,
+.evaluacion-amplia .chart-stage,
+.evaluacion-amplia .chart-shim {
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  .evaluacion-amplia .chart-wrapper {
+    flex: 0 0 auto !important;
+    height: auto !important;
+  }
+}
+
+.evaluacion-amplia .chart-stage {
+  flex: none;
+  height: auto;
+  overflow: auto;
+}
+
+.evaluacion-amplia .chart-shim {
+  position: static;
+  margin: 8px;
+}

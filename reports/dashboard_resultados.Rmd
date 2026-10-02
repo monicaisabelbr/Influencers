@@ -3,9 +3,10 @@ title: "Influencia360 · Resultados bayesianos"
 output:
   flexdashboard::flex_dashboard:
     orientation: rows
-    vertical_layout: scroll
+    vertical_layout: fill
     theme: flatly
     self_contained: true
+    css: dashboard_resultados.css
 ---
 
 ```{r setup, include=FALSE}
@@ -121,8 +122,9 @@ influencers %>%
   mutate(prob_influencia_alta = scales::percent(prob_influencia_alta, accuracy = .1),
          tasa_engagement = round(tasa_engagement, 2),
          score_influencia = round(score_influencia, 1)) %>%
-  datatable(rownames = FALSE, filter = "top",
-            options = list(pageLength = 15, scrollX = TRUE))
+  datatable(rownames = FALSE, filter = "top", width = "100%",
+            fillContainer = TRUE, class = "stripe hover nowrap",
+            options = list(pageLength = 25, scrollX = TRUE))
 ```
 
 Seguidores
@@ -138,11 +140,12 @@ seguidores %>%
   mutate(prob_seguidor_alta = scales::percent(prob_seguidor_alta, accuracy = .1),
          reciprocidad = scales::percent(reciprocidad, accuracy = .1),
          score_seguidor = round(score_seguidor, 1)) %>%
-  datatable(rownames = FALSE, filter = "top",
-            options = list(pageLength = 15, scrollX = TRUE))
+  datatable(rownames = FALSE, filter = "top", width = "100%",
+            fillContainer = TRUE, class = "stripe hover nowrap",
+            options = list(pageLength = 25, scrollX = TRUE))
 ```
 
-Evaluación
+Evaluación {.evaluacion-amplia}
 =======================================================================
 
 Row
@@ -153,8 +156,14 @@ Row
 ```{r}
 metricas %>%
   mutate(exactitud = scales::percent(exactitud, accuracy = .1)) %>%
-  datatable(rownames = FALSE, options = list(dom = "t", pageLength = 5))
+  datatable(rownames = FALSE, width = "100%", fillContainer = FALSE,
+            colnames = c("Objetivo", "Exactitud", "Perfiles de entrenamiento",
+                         "Perfiles de prueba", "Método"),
+            options = list(dom = "t", paging = FALSE, scrollX = TRUE))
 ```
+
+Row
+-----------------------------------------------------------------------
 
 ### Lectura correcta
 
