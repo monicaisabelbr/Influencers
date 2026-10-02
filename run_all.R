@@ -1,11 +1,14 @@
 options(stringsAsFactors = FALSE)
+if (.Platform$OS.type == "windows" && !isTRUE(l10n_info()[["UTF-8"]])) {
+  Sys.setlocale("LC_CTYPE", "English_United States.utf8")
+}
 
 local_lib <- file.path(getwd(), ".Rlib")
 if (dir.exists(local_lib)) .libPaths(c(local_lib, .libPaths()))
 
 required <- c(
   "charlatan", "bnlearn", "dplyr", "tidyr", "readr", "ggplot2",
-  "plotly", "DT", "visNetwork", "flexdashboard", "rmarkdown", "knitr"
+  "plotly", "DT", "visNetwork", "flexdashboard", "rmarkdown", "knitr", "DiagrammeR"
 )
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
 if (length(missing)) {

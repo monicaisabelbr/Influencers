@@ -1,0 +1,50 @@
+{
+  "fecha_utc": "2026-10-02T00:02:52.419757+00:00",
+  "modo": "publicacion",
+  "resultados": [
+    {
+      "archivo": "index.html",
+      "url": "https://influencersbi2.netlify.app/index.html",
+      "http": 200,
+      "titulo": "Influencia360: BI para redes sociales",
+      "pestanas": [],
+      "graficos_svg": 3,
+      "tablas": 4,
+      "filtro_verificado": true,
+      "errores_js": []
+    },
+    {
+      "archivo": "dashboard_datos.html",
+      "url": "https://influencersbi2.netlify.app/dashboard_datos.html#panorama",
+      "http": 200,
+      "titulo": "Influencia360 · Exploración de datos",
+      "pestanas": [
+        "Panorama",
+        "Actividad",
+        "Red social",
+        "Calidad y catálogo"
+      ],
+      "graficos_svg": 15,
+      "tablas": 1,
+      "filtro_verificado": true,
+      "errores_js": []
+    },
+    {
+      "archivo": "dashboard_resultados.html",
+      "url": "https://influencersbi2.netlify.app/dashboard_resultados.html#resumen",
+      "http": 200,
+      "titulo": "Influencia360 · Resultados bayesianos",
+      "pestanas": [
+        "Resumen",
+        "Red bayesiana",
+        "Influenciadores",
+        "Seguidores",
+        "Evaluación"
+      ],
+      "graficos_svg": 6,
+      "tablas": 3,
+      "filtro_verificado": true,
+      "errores_js": []
+    }
+  ]
+}

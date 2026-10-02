@@ -1,0 +1,50 @@
+{
+  "fecha_utc": "2026-10-01T23:59:11.648472+00:00",
+  "modo": "local",
+  "resultados": [
+    {
+      "archivo": "index.html",
+      "url": "http://127.0.0.1:53194/index.html",
+      "http": 200,
+      "titulo": "Influencia360: BI para redes sociales",
+      "pestanas": [],
+      "graficos_svg": 3,
+      "tablas": 4,
+      "filtro_verificado": true,
+      "errores_js": []
+    },
+    {
+      "archivo": "dashboard_datos.html",
+      "url": "http://127.0.0.1:53194/dashboard_datos.html#panorama",
+      "http": 200,
+      "titulo": "Influencia360 · Exploración de datos",
+      "pestanas": [
+        "Panorama",
+        "Actividad",
+        "Red social",
+        "Calidad y catálogo"
+      ],
+      "graficos_svg": 15,
+      "tablas": 1,
+      "filtro_verificado": true,
+      "errores_js": []
+    },
+    {
+      "archivo": "dashboard_resultados.html",
+      "url": "http://127.0.0.1:53194/dashboard_resultados.html#resumen",
+      "http": 200,
+      "titulo": "Influencia360 · Resultados bayesianos",
+      "pestanas": [
+        "Resumen",
+        "Red bayesiana",
+        "Influenciadores",
+        "Seguidores",
+        "Evaluación"
+      ],
+      "graficos_svg": 6,
+      "tablas": 3,
+      "filtro_verificado": true,
+      "errores_js": []
+    }
+  ]
+}

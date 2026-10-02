@@ -1,0 +1,20 @@
+[
+  {
+    "archivo": "dashboard_datos.html",
+    "bytes": 10084696,
+    "MB_decimal": 10.08,
+    "sha256": "618c1dd9cc4db647e2c909b9c70baf0313e263c4891ff87257bfdec2ecae662f"
+  },
+  {
+    "archivo": "dashboard_resultados.html",
+    "bytes": 10103099,
+    "MB_decimal": 10.1,
+    "sha256": "1f1f3844ce55c082230d5ee84f97ce761dc4deed7ea1b5597ccd383bb191ff75"
+  },
+  {
+    "archivo": "index.html",
+    "bytes": 8615719,
+    "MB_decimal": 8.62,
+    "sha256": "59f115b62f0cd77d1fed256eecd91474633e38c88db3d0f661a9dd76a957b251"
+  }
+]

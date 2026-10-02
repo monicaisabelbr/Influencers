@@ -1,0 +1,5 @@
+# Los reportes se generan localmente con Rscript run_all.R.
+# Netlify publica los HTML ya generados y guardados en Git.
+[build]
+  publish = "docs"
+  command = ""
